@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: spinY 1s linear forwards; /* Define the spin animation */
+}
+
+@keyframes spinY {
+    0% {
+        transform: rotateY(0deg); /* Start with no rotation */
+    }
+    100% {
+        transform: rotateY(360deg); /* End with a full rotation (360 degrees) */
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.bio {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.catchy-content {
+    width: 70%;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #818589;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message-text {
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.send-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .social-link img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .message-text {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .social-link img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .message-text {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .social-link img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .message-text {
+        width: 95%;
+    }
+}
